@@ -1,25 +1,47 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.3.32811.315
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "working With Numbers", "working With Numbers\working With Numbers.csproj", "{C85BAD77-E293-4C03-BF96-70AD6C365D82}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C85BAD77-E293-4C03-BF96-70AD6C365D82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C85BAD77-E293-4C03-BF96-70AD6C365D82}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C85BAD77-E293-4C03-BF96-70AD6C365D82}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C85BAD77-E293-4C03-BF96-70AD6C365D82}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {3EB64025-4719-4A0F-A858-FF0003F50164}
-	EndGlobalSection
-EndGlobal
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace working_With_Numbers
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            {
+                // Your Age
+                int userAge = 17;
+
+                // Length of years on Jupiter (in Earth years)
+                double jupiterYears = 11.86;
+
+                // Age on Jupiter
+                double jupiterAge = userAge / jupiterYears;
+
+                // Time to Jupiter
+                double journeyToJupiter = 6.142466;
+
+                // New Age on Earth
+                double newEarthAge = userAge + journeyToJupiter;
+
+                // New Age on Jupiter
+                double newJupiterAge = newEarthAge / jupiterYears;
+
+                // Log calculations to console
+                Console.WriteLine(userAge);
+                Console.WriteLine(jupiterYears);
+                Console.WriteLine(jupiterAge);
+                Console.WriteLine(journeyToJupiter);
+                Console.WriteLine(newEarthAge);
+                Console.WriteLine(newJupiterAge);
+
+
+                Console.ReadKey();
+
+
+            }
+        }
+    }
+}
